@@ -1,29 +1,31 @@
+import java.util.ArrayList;
+
 public class Aluno {
-        public String nome;
-        private int idade;
-        double valor;
+    private String nome;
+    private int idade;
+    private ArrayList<Double> notas = new ArrayList<>();
 
-        // "Getter" - pra LER o valor
-        public String getNome() {
-                return nome;
-        }
+    public String getNome() {
+        return nome;
+    }
 
-        public void setNome(String nome) {
-                this.nome = nome;
-        }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
-        public int getIdade() {
-                return idade;
-        }
+    public int getIdade() {
+        return idade;
+    }
 
-        public void setIdade(int idade) {
-                this.idade = idade;
-        }
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
 
-        void apresentar() {
-                System.out.println("Olá meu nome é " + nome + " e tenho " + idade  + " anos.");
-        }
+    public ArrayList<Double> getNotas() {
+        return notas;
+    }
 
-
+    public void adicionarNota(double nota) {
+        notas.add(nota);
+    }
 }
-
