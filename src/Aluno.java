@@ -28,4 +28,9 @@ public class Aluno {
     public void adicionarNota(double nota) {
         notas.add(nota);
     }
+
+    void apresentar() {
+        System.out.println("Olá, meu nome é " + nome + " e tenho " + idade + " anos." + " e minha nota é: " + notas);
+
+    }
 }

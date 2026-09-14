@@ -26,5 +26,9 @@ public class Main {
 
         System.out.println("Tamanho da lista: " + alunos.size());
 
+        for (int i = 0; i < alunos.size(); i++) {
+            alunos.get().apresentar();
+        }
+
     }
 }
