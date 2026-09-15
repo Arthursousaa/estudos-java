@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Aluno {
     private String nome;
@@ -41,6 +42,6 @@ public class Aluno {
             }
             double media = soma / notas.size();
             return media;
-
     }
+
 }
